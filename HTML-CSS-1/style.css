@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+/* .categories{
+  background-color: honeydew;
+  font-size: 12px;
+  font-family:Arial, Helvetica, sans-serif;
+  border:4px solid blueviolet;
+  text-transform: uppercase;
+  border-radius: 10px;
+  direction: rtl;
+  unicode-bidi: isolate-override;
+}
+
+.categories h2{
+  text-align: center;
+  
+}
+
+.categories ul{
+  padding: 0;
+  list-style: none;
+}
+
+.categories a{
+  text-decoration: none;
+  color: black;
+}
+
+.categories li{
+  margin-bottom: 15px;
+  border-bottom: 1px dotted blue;
+  padding-left: 10px;
+}
+
+.categories a:hover{
+  background-color: yellow;
+  font-size: 20px;
+} */
+
+.my-form{
+  padding: 20px;
+  font-family: 'poppins';
+}
+
+.form-gp label{
+  display: block;
+  
+}
+
+.form-gp input{
+  padding: 7px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+
+.btn{
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.15s
+  
+}
+
+.btn:hover{
+  background-color: blue;
+  color: red;
+  opacity: 0.9;
+}
+
+.btn:active{
+  background-color: white;
+  color: blue;
+}
+
+.block{
+  float: left;
+  width: 70%;
+  padding: 10px;
+  border: 4px solid black;
+  box-sizing: border-box;
+}
+
+.block1{
+  float: right;
+  width: 30%;
+  padding: 10px;
+  border: 4px solid black;
+  box-sizing: border-box;
+}
+
+.pbox{
+  width: 800px;
+  height: 700px;
+  border: 4px solid blue;
+  position: relative;
+  background-image: url(./images/boliviainteligente-4cGR8wgtxR8-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pbox h1{
+  position: absolute;
+  top: 40px;
+  left: 200px;
+}
+
+.pbox h2{
+  position: absolute;
+  bottom: 60px;
+  right: 300px;
+}
+
+.fbtn{
+  position: fixed;
+  top: 200px;
+  left: 200px;
+}
+
+
+.psuedo1 li:nth-child(3){
+  background-color: red;
+}
+
+.psuedo1 li:nth-child(5){
+  background-color: orangered;
+}
+
+.psuedo1 li:first-child{
+  background-color: yellow;
+}
+
+.psuedo1 li:last-child{
+  background-color: green;
+}
+
+.psuedo li:nth-child(odd){
+  background-color: red;
+  color: white;
+}
+
+
+.psuedo li:nth-child(even){
+  background-color: green;
+}
