@@ -19,16 +19,40 @@
 // }
 
 //DOM Manipulation
-const ul = document.querySelector('.items');
+// const ul = document.querySelector('.items');
 // ul.remove();
-const btn = document.querySelector('.btn');
+// const btn = document.querySelector('.btn');
 
 //Event Listener
-btn.addEventListener('click', e => {
-    e.preventDefault()
-    ul.firstElementChild.textContent = 'HTML';
-    ul.children[1].innerText = 'CSS';
-    ul.lastElementChild.innerHTML = '<h4>JavaScript</h4><p>Language of web</p>'
-    btn.style.backgroundColor = 'blue';
-    btn.style.textTransform = 'uppercase';
-})
+// btn.addEventListener('click', e => {
+//     e.preventDefault()
+//     ul.firstElementChild.textContent = 'HTML';
+//     ul.children[1].innerText = 'CSS';
+//     ul.lastElementChild.innerHTML = '<h4>JavaScript</h4><p>Language of web</p>'
+//     btn.style.backgroundColor = 'blue';
+//     btn.style.textTransform = 'uppercase';
+// })
+
+//Form Manipulation
+const myForm = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const userList = document.querySelector('#users');
+
+myForm.addEventListener('submit', onSubmit);
+
+function onSubmit(e){
+    e.preventDefault();
+    if(nameInput.value === '' || emailInput.value === ''){
+        msg.classList.add('error');
+        msg.innerText = 'Please enter all fields';
+        setTimeout(() => msg.remove(), 3000);
+    } else {
+        const li = document.createElement('li');
+        li.append(`${nameInput.value}: ${emailInput.value}`);
+        userList.append(li);
+        nameInput.value = '';
+        emailInput.value = '';
+    }
+}
